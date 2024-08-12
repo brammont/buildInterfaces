@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-based Accordion with Breadcrumb Navigation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .navbar {
+            background-color: #5230C4;
+        }
+        .breadcrumb {
+            background-color: #F0E2FE;
+        }
+        .card {
+            background-color: #F0E2FE;
+            color: #212529;
+        }
+        .card-header {
+            background-color: #5230C4;
+            color: #F8F9FA;
+        }
+        footer {
+            background-color: #5230C4;
+            color: #F8F9FA;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header with Breadcrumb Navigation -->
+    <header class="bg-dark text-white py-3">
+        <div class="container">
+            <h1 class="mb-3">My Website</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Content Area with Cards and Accordion -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Card 1 -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white" data-bs-toggle="collapse" data-bs-target="#collapseCard1" aria-expanded="true" aria-controls="collapseCard1">
+                                Card #1
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseCard1" class="collapse show" data-bs-parent="#accordionExample">
+                        <div class="card-body">
+                            This is the content for card #1. You can place any information here, such as text, images, or other Bootstrap components.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCard2" aria-expanded="false" aria-controls="collapseCard2">
+                                Card #2
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseCard2" class="collapse" data-bs-parent="#accordionExample">
+                        <div class="card-body">
+                            This is the content for card #2. You can place any information here, such as text, images, or other Bootstrap components.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card mb-3">
+                    <div class="card-header">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link text-white collapsed" data-bs-toggle="collapse" data-bs-target="#collapseCard3" aria-expanded="false" aria-controls="collapseCard3">
+                                Card #3
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseCard3" class="collapse" data-bs-parent="#accordionExample">
+                        <div class="card-body">
+                            This is the content for card #3. You can place any information here, such as text, images, or other Bootstrap components.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 mt-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 My Website. All rights reserved.</p>
+            <p>Contact: info@mywebsite.com</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

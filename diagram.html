@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Diagram</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .diagram-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .node {
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            margin: 10px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .node-content {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .connector {
+            height: 20px;
+            width: 2px;
+            background-color: #007bff;
+            margin: 0 auto;
+        }
+        .horizontal-connector {
+            height: 2px;
+            width: 60px;
+            background-color: #007bff;
+            margin: 0 auto;
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .list-unstyled {
+            padding-left: 0;
+            list-style: none;
+        }
+        .list-unstyled li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container diagram-container">
+        <div class="node">
+            Home Page (index.html)
+            <div class="node-content">
+                Entry point with links to:
+                <ul class="list-unstyled">
+                    <li><a href="principles_analysis_design.html">Group One</a></li>
+                    <li><a href="programming_controls_structures.html">Group Two</a></li>
+                    <li><a href="programming_concepts.html">Group Three</a></li>
+                    <li><a href="technology_definitions.html">Group Four</a></li>
+                    <li><a href="contact.html">Contact Page</a></li>
+                </ul>
+                Uses Bootstrap for layout and components. Implements accordion or collapse for content.
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="connector"></div>
+        </div>
+        <div class="wrapper">
+            <div class="node">
+                Group One<br>(principles_analysis_design.html)
+                <div class="node-content">
+                    Principles of analysis and design, website architectural requirements.
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Back to Home Page</a></li>
+                        <li><a href="programming_controls_structures.html">Group Two</a></li>
+                        <li><a href="programming_concepts.html">Group Three</a></li>
+                        <li><a href="technology_definitions.html">Group Four</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="horizontal-connector"></div>
+            <div class="node">
+                Group Two<br>(programming_controls_structures.html)
+                <div class="node-content">
+                    Programming controls, design structures, testing procedures, debugging methods, and coding techniques.
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Back to Home Page</a></li>
+                        <li><a href="principles_analysis_design.html">Group One</a></li>
+                        <li><a href="programming_concepts.html">Group Three</a></li>
+                        <li><a href="technology_definitions.html">Group Four</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="horizontal-connector"></div>
+            <div class="node">
+                Group Three<br>(programming_concepts.html)
+                <div class="node-content">
+                    Definitions for authentication, HTTP, session management, stateless programming.
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Back to Home Page</a></li>
+                        <li><a href="principles_analysis_design.html">Group One</a></li>
+                        <li><a href="programming_controls_structures.html">Group Two</a></li>
+                        <li><a href="technology_definitions.html">Group Four</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="horizontal-connector"></div>
+            <div class="node">
+                Group Four<br>(technology_definitions.html)
+                <div class="node-content">
+                    Definitions for technologies like HTML, CSS, and programming languages.
+                    <ul class="list-unstyled">
+                        <li><a href="index.html">Back to Home Page</a></li>
+                        <li><a href="principles_analysis_design.html">Group One</a></li>
+                        <li><a href="programming_controls_structures.html">Group Two</a></li>
+                        <li><a href="programming_concepts.html">Group Three</a></li>
+                        <li><a href="contact.html">Contact Page</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="connector"></div>
+        <div class="node">
+            Contact Page (contact.html)
+            <div class="node-content">
+                Provides contact information and links to CITE and SMTAFE.
+                <ul class="list-unstyled">
+                    <li><a href="index.html">Back to Home Page</a></li>
+                    <li><a href="principles_analysis_design.html">Group One</a></li>
+                    <li><a href="programming_controls_structures.html">Group Two</a></li>
+                    <li><a href="programming_concepts.html">Group Three</a></li>
+                    <li><a href="technology_definitions.html">Group Four</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
