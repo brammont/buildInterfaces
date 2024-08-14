@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    flex-grow: 1; /* This will make the main content grow to fill the available space */
+}
+
+footer {
+    background-color: #f0f0f0; /* Example footer background color */
+}
