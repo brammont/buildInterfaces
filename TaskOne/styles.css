@@ -8,6 +8,10 @@ body {
     flex-grow: 1; /* This will make the main content grow to fill the available space */
 }
 
-footer {
-    background-color: #f0f0f0; /* Example footer background color */
-}
+.rectangle-with-shadow {
+    width: auto; /* Adjust width as needed */
+    height: auto; /* Adjust height as needed */
+    background-color: #A2ABB5; /* Adjust background color as needed */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+    border-radius: 20px;
+  }
